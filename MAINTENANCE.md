@@ -34,25 +34,31 @@ silently. A repeatable specialized workflow may merit an instruction-only skill
 (SKILL.md and optional Markdown references), but creating/installing it requires
 separate approval. Do not create a generic token-saving skill.
 
-A separately authorized weekly Codex review can research and propose changes.
-It should check existing PRs, avoid duplicates, and remain quiet when no actionable
-change exists. It must not merge proposals or update installations automatically.
+A separately authorized weekly Codex review follows its saved authorization:
+proposal-only reviews remain proposal-only; reviews authorized to publish may
+commit validated changes directly to main. Check recent commits and open PRs to
+avoid duplicates, and remain quiet when no actionable change exists. Repository
+policy does not itself change a scheduled task or authorize installation updates.
 
-## Publish through a pull request
+## Publish an authorized update directly
 
-1. Create a topic branch and make a small, clear documentation change.
+1. Inspect local changes, refresh main without overwriting work, and make a small,
+   clear documentation change within the user's authorization.
 2. Add dated sources and a CHANGELOG.md entry.
 3. Check consistency across README, portable guidance and ChatGPT text.
 4. Check relative links, privacy, and the preserve-and-merge rule.
 5. Explain what changes, why, and any capabilities that are surface-dependent.
-6. The owner reviews and merges; other installations use it when next instructed.
+6. Commit and push directly to main, then verify the remote commit and report it.
+   A PR is optional unless requested or required by branch protection. Never
+   force-push or weaken repository protections; if blocked, report the required
+   review. Other installations use the update only when instructed.
 
 No Python scripts, installers, machine-specific setup, or automated deployment
 belong in this repository. No CI runner or programming-language requirement is
 needed for reading these instructions.
 
-Protecting main with required PRs is an optional owner decision. Repository text
-does not enforce approval or grant permission to change GitHub security settings.
+Existing branch protections still apply. Direct-push permission does not authorize
+unrelated changes, automatic deployment or changes to GitHub security settings.
 
 ## Source reference
 

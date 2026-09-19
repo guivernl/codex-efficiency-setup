@@ -71,6 +71,24 @@ Account for both short-term headroom and time until longer-window resets. A week
 balance should not be spent merely because the five-hour window has room. Leave
 headroom for final verification, saving progress and other concurrent sessions.
 
+For each reported window, consider how long the remaining allowance must last.
+When both remaining allowance and a future reset time are known, estimate a
+sustainable pace: max(0, remaining allowance minus working reserve) divided by
+time until reset. For percentages, express the result in percentage points per
+hour or day, not a percentage of the remaining balance. Use a suitable unit for
+short windows and treat each window separately; never invent a missing window.
+
+Illustration only: 91 percentage points remaining over 6 days 22 hours is about
+13.2 points per day, or 11.7 with a 10-point reserve. These are not account readings,
+a default reserve, a daily product limit or a guaranteed spending budget.
+
+Allow for expected upcoming work and all sessions sharing the allowance. Compare
+recent consumption with the sustainable pace only when readings cover the same
+bucket and reset period; do not attribute shared consumption solely to this task.
+Recalculate after resets or material changes. If reset time or readings are absent,
+report that pacing is unknown rather than fabricate an estimate. A heavy day may
+be offset by lighter later work, but ask before changing scope or the lead model.
+
 Recheck at meaningful milestones, before expensive phases or delegation, and after
 unexpected retries or scope growth. Increase checking frequency as headroom shrinks;
 avoid polling after every trivial action. Use observed consumption as an estimate,

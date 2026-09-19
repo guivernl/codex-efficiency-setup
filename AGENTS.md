@@ -2,8 +2,10 @@
 
 This is an instructions-only reference, not executable setup software.
 
-When maintaining it, read MAINTENANCE.md. Propose changes through a pull request;
-do not auto-merge, deploy, or change local instructions merely to edit this repo.
+When maintaining it, read MAINTENANCE.md. For user-authorized repository updates,
+validate the change, then commit and push directly to main; a pull request is not
+required unless requested or required by branch protection. Never bypass protection
+or force-push. Editing this repo does not authorize deployment to installations.
 
 When the user explicitly asks to apply this repository to an installation:
 1. Read README.md, BOOTSTRAP.md, and the relevant portable guidance completely.

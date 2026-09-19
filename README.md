@@ -54,10 +54,12 @@ part of applying this repository.
 
 ## Keeping it current
 
-Review new findings and official model documentation, propose a pull request,
-then let the owner approve and merge it. Only approved main is the reference for
-normal use. A weekly research task may propose updates; it must not apply them to
-your machines automatically. Scheduling that review is separate from this repo.
+Review new findings and official model documentation. For owner-authorized updates,
+validate, commit and push directly to main; no pull request is required unless
+requested or required by branch protection. Never bypass protections or force-push.
+Published main is the reference for normal use. Weekly reviews follow their saved
+authorization and must not apply changes to machines automatically. Scheduling or
+changing that review is separate from this repo.
 
 See [SECURITY.md](SECURITY.md). Never publish private configurations, credentials,
 account or server identifiers, or task transcripts.

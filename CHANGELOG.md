@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-19 — reset-aware pacing and direct publication
+
+- Add remaining-time pacing per reported usage window, reserves, shared-session
+  consumption and comparable-reading safeguards; distinguish pacing from daily caps.
+- Owner-authorized updates may be validated and pushed directly to main without
+  a PR. Preserve branch protections and separate installation/scheduler authority.
+
 ## 2026-09-19 — live status first
 
 - Add the owner's live-status-first preference to portable and ChatGPT guidance:
