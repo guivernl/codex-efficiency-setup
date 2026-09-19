@@ -160,8 +160,8 @@ class SyncTests(unittest.TestCase):
         new_exe.parent.mkdir(parents=True)
         old_exe.write_text("")
         new_exe.write_text("")
-        sync.os.utime(old_exe.parent, (1, 1))
-        sync.os.utime(new_exe.parent, (2, 2))
+        sync.os.utime(old_exe, (1, 1))
+        sync.os.utime(new_exe, (2, 2))
         self.version_check.stop()
         with patch.object(sync.shutil, "which", return_value=None), patch.dict(sync.os.environ, {"LOCALAPPDATA": str(appdata)}), patch.object(
             sync.subprocess, "run", return_value=type("Result", (), {"stdout": "codex-cli 0.200.0", "stderr": ""})()
