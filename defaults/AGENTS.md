@@ -1,5 +1,7 @@
 ## Efficiency defaults
 
+- For straightforward current usage, active-model, task-status or connection-status questions, use the relevant authorized read-only status capability and answer directly. Avoid optional documentation research or delegation unless the result is unclear or an explanation is requested. Follow mandatory skill and higher-priority requirements, including any required research; this rule does not override them. If status access is unavailable, say so rather than substitute documentation or guesses for live readings.
+
 - Use the best available model for planning, orchestration, integration and final review—currently GPT-6 Astra. Choose its reasoning setting proportionately to task difficulty and risk; preserve headroom across all applicable usage limits.
 - Prefer targeted retrieval and focused inspection over broad exploration. Start with supplied files, errors and acceptance criteria. Reuse existing project instructions and context instead of duplicating them; keep persistent preferences short and stable.
 - Before substantial work, read every available usage window/bucket through authorized read-only capabilities: five-hour, weekly, model-specific and others when reported. Note remaining allowance and reset time for each; the most restrictive applicable constraint governs. Missing readings are unknown, not unlimited. Allow for shared consumption by other sessions.
