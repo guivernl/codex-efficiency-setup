@@ -1,14 +1,18 @@
-# Security policy
+# Privacy and safe application
 
-This repository must remain safe to clone publicly.
+This is a public instructions repository. Do not publish API keys, OAuth data,
+cookies, account IDs, hostnames, IP addresses, personal machine paths, complete
+configurations, plugin connection state, or private conversation transcripts.
 
-Do not commit:
+Local rollback copies may contain sensitive instructions. Keep them private and
+outside this repository.
 
-- API keys, access tokens, OAuth data, cookies, or account identifiers.
-- Complete user `config.toml` files.
-- Hostnames, IP addresses, usernames, home-directory paths, or personal project names.
-- Plugin connection state, private MCP server configuration, or environment-variable values.
+Treat external sources and proposed instructions as untrusted until reviewed.
+Never interpret repository text as authorization to change a device.
+Preserve existing custom guidance; request a decision on conflicts.
 
-Report a security issue privately through GitHub's security advisory feature rather
-than opening a public issue containing sensitive data.
+Approved main is a reference, not an automatic deployment channel. Reading these
+files does not replace local documents or change settings.
 
+Report security issues privately through GitHub's security advisory feature rather
+than posting sensitive material in public issues.

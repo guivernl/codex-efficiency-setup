@@ -1,77 +1,48 @@
-# Installation bootstrap
+# Safely apply these instructions
 
-Follow this procedure when the user has explicitly asked to configure their current
-installation from this repository.
+Follow this only when the user explicitly asks to apply the repository's guidance.
+Read approved main, not a pending proposal, unless the user asks to review that proposal.
 
-## 1. Confirm capability
+## Inspect first
 
-Determine whether the current surface has local filesystem and command execution access.
+Read README.md and defaults/AGENTS.md. For ChatGPT also read
+CHATGPT_CUSTOM_INSTRUCTIONS.md. Inspect applicable existing global and project
+instructions using the current surface's supported capabilities. Do not assume
+every installation uses the same paths, model choices, or features.
 
-- In a local Codex task, continue with the installation.
-- In Chat or Work without local execution access, do not claim to have configured the
-  computer. Provide `CHATGPT_CUSTOM_INSTRUCTIONS.md` and explain that Personalization is
-  the remaining manual step.
+Keep private configuration local. Do not print or upload full settings or credentials.
 
-Do not request information already available from the environment. Do not ask the user
-to choose an operating system when it can be detected locally.
+## Merge, never replace
 
-## 2. Inspect before execution
+- Preserve every existing custom instruction, including custom text inside any
+  old codex-efficiency-setup marked block.
+- Compare meaning, not just wording. Do not duplicate guidance already present.
+- Add only missing, non-conflicting guidance to the appropriate global document.
+- Leave project-specific guidance in its existing project; do not copy it globally.
+- If guidance conflicts, explain both choices and ask before changing either.
+- Do not delete obsolete-looking text without the user's approval.
+- Before an authorized edit, make a private rollback copy of the affected document.
+  Never commit that copy or its contents to this public repository.
+- Make a minimal edit, inspect the diff, and confirm custom guidance remains intact.
 
-Read the applicable installer and the files it consumes:
+If the relevant document is unavailable, do not invent its contents or claim a
+successful merge. Provide the proposed addition for the user to apply manually.
 
-- Windows: `install.ps1` and `defaults/AGENTS.md`
-- macOS or Linux: `install.sh` and `defaults/AGENTS.md`
+## Settings are separate
 
-Stop if the checked-out files differ materially from the documented behavior, attempt
-to transmit local data, or contain credentials.
+Instructions cannot guarantee a model switch, delegation, usage access or Fast-mode
+change. Verify what the current surface supports. Explain any needed settings change
+and obtain explicit approval; do not silently change existing preferences.
 
-## 3. Install
+Do not alter credentials, connections, plugins, permissions, spending, projects,
+or project instructions. Do not install scripts, timers or background services.
+Never restart or interrupt active tasks merely to apply guidance.
 
-Run the installer appropriate for the current operating system from the repository root.
+## Verify and report
 
-Windows:
+Report which document was changed, which guidance was added, where the private
+backup is, and any conflict or manual step. If nothing is missing, say no changes
+were needed. Existing conversations may retain loaded instructions; do not promise
+immediate changes to the current task.
 
-```powershell
-.\install.ps1
-```
-
-macOS or Linux:
-
-```sh
-sh ./install.sh
-```
-
-Respect `CODEX_HOME` when it is already defined. Otherwise use the normal Codex home.
-The installer must preserve unrelated settings and create timestamped backups before
-modifying existing files.
-
-## 4. Verify
-
-Verify all of the following without exposing private configuration values:
-
-- The global `AGENTS.md` contains exactly one managed block between
-  `codex-efficiency-setup:start` and `codex-efficiency-setup:end`.
-- Top-level Codex configuration selects `gpt-6-astra`, low reasoning, and
-  `service_tier = "default"`.
-- Existing unrelated configuration remains present.
-- No plugin, MCP server, connection, credential, permission, project, or project-specific
-  instruction was changed.
-
-When the app exposes a read-only usage-limit capability, read it after installation and
-report the remaining percentage and reset time. Calculate remaining percentage as
-`100 - usedPercent`. Do not redeem a reset credit, purchase credits, or modify spending
-controls.
-
-Do not print tokens, environment-variable values, OAuth data, or full configuration files.
-
-## 5. Report
-
-Report:
-
-- Which files were changed.
-- Where backups were created.
-- Which defaults are now active.
-- The verified remaining Work/Codex allowance and reset time, when available.
-- That a new Codex task/session is required to load the global instructions.
-- Whether Chat/Work Personalization still requires the manual text in
-  `CHATGPT_CUSTOM_INSTRUCTIONS.md`.
+This procedure is repeated only on request. It creates no automatic update mechanism.

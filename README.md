@@ -1,89 +1,50 @@
-# Codex efficiency setup
+# Codex efficiency instructions
 
-Portable, privacy-safe defaults for new Codex and ChatGPT installations.
+A shared, public reference for useful Codex and ChatGPT working instructions.
+This repository contains instructions, not an installer or background updater.
 
-## One-line setup with Codex
+## Use it on an installation
 
-Send this instruction to a local Codex task:
+Tell Codex:
 
-> Configure this installation from https://github.com/guivernl/codex-efficiency-setup
+> Read the latest approved instructions at https://github.com/guivernl/codex-efficiency-setup and apply the relevant guidance to this installation. Follow BOOTSTRAP.md. Preserve all existing custom instructions and local settings; explain conflicts before changing anything.
 
-The repository-level [AGENTS.md](AGENTS.md) directs Codex to follow
-[BOOTSTRAP.md](BOOTSTRAP.md), select the installer for the current operating system,
-preserve existing configuration, verify the result, and report what changed.
+Repeat that request whenever you want an installation to pick up approved changes.
+A link does not create automatic synchronization. Each installation is updated only
+when you authorize it. Updating this repository does not update existing tasks.
 
-A bare URL by itself is not a request to modify a computer. Include the words
-“Configure this installation from” so the agent has explicit authorization.
+## What to read
 
-This repository intentionally contains no credentials, account identifiers,
-machine paths, project names, plugin inventories, or complete user configuration
-files.
+- [defaults/AGENTS.md](defaults/AGENTS.md): portable efficiency guidance.
+- [BOOTSTRAP.md](BOOTSTRAP.md): how to apply it without losing customizations.
+- [CHATGPT_CUSTOM_INSTRUCTIONS.md](CHATGPT_CUSTOM_INSTRUCTIONS.md): text for ChatGPT.
+- [MAINTENANCE.md](MAINTENANCE.md): how findings and model releases become proposals.
+- [CHANGELOG.md](CHANGELOG.md): dated approved changes.
 
-## What it configures
+Current preference: Astra leads; Luna handles suitable bounded execution.
+Check usage when available, use targeted retrieval, retain project context, and
+keep responses concise. These are preferences, not a promise that every surface
+can select models, delegate work, read usage, or change persistent settings.
 
-- GPT-6 Astra as the lead Codex model, starting at low reasoning effort.
-- Usage-aware planning before substantial Work/Codex tasks when the app exposes
-  remaining allowance and reset information.
-- Delegation of narrow, bounded execution to GPT-5.6 Luna when supported and when
-  the saving is likely to exceed coordination overhead.
-- Standard processing (`service_tier = "default"`), so Fast mode is not the default.
-- Concise global Codex working agreements that favor targeted retrieval, proportionate
-  tool use, reusable project context, economical delegation, and concise reporting.
+## Your existing instructions stay yours
 
-The installers preserve unrelated settings. Before changing an existing file, they
-create a timestamped backup in the same directory.
+None of these files should replace an entire local instruction document.
+Codex must read existing guidance first, add only missing non-conflicting guidance,
+and preserve custom text both inside and outside any older marked section.
+Markers identify earlier additions; they are not permission to overwrite them.
+Conflicts require your decision. Applying the same guidance again should do nothing.
 
-## Install on Windows
+Do not change model settings merely by copying instruction text. If the active
+surface needs a separate setting change, explain it and obtain approval first.
+No scripts, scheduled installers, plugin changes, restarts or spending changes are
+part of applying this repository.
 
-Clone or download this repository, open PowerShell in the repository directory, and run:
+## Keeping it current
 
-```powershell
-.\install.ps1
-```
+Review new findings and official model documentation, propose a pull request,
+then let the owner approve and merge it. Only approved main is the reference for
+normal use. A weekly research task may propose updates; it must not apply them to
+your machines automatically. Scheduling that review is separate from this repo.
 
-If your Codex home is in a nonstandard location:
-
-```powershell
-.\install.ps1 -CodexHome "D:\path\to\.codex"
-```
-
-## Install on macOS or Linux
-
-Clone or download this repository, then run:
-
-```sh
-sh ./install.sh
-```
-
-To use a nonstandard Codex home:
-
-```sh
-CODEX_HOME=/path/to/.codex sh ./install.sh
-```
-
-Start a new Codex task after installation. Codex loads global `AGENTS.md`
-instructions when a new task/session begins.
-
-## ChatGPT and Work
-
-Codex reads the installed global `AGENTS.md`. Chat and Work do not use that file.
-For those surfaces, append the text in [CHATGPT_CUSTOM_INSTRUCTIONS.md](CHATGPT_CUSTOM_INSTRUCTIONS.md)
-to **Settings → Personalize**, preserving any useful instructions already present.
-
-Project-specific instructions should stay inside their relevant ChatGPT Project or
-repository. They should not be copied into the global file.
-
-## Uninstall or roll back
-
-The installer labels its addition inside `AGENTS.md` with managed comment markers.
-Remove that marked block to remove the global efficiency instructions. Restore a
-timestamped `.bak-*` file if you want to revert all changes from an installation.
-
-## Security
-
-Review scripts before running them. Do not commit your complete `config.toml`, tokens,
-OAuth data, plugin connection data, hostnames, personal project names, or files copied
-from your Codex home.
-
-Codex's supported global and project instruction hierarchy is documented in the
-[official OpenAI documentation](https://developers.openai.com/es-419/docs/agent-configuration/agents-md).
+See [SECURITY.md](SECURITY.md). Never publish private configurations, credentials,
+account or server identifiers, or task transcripts.
