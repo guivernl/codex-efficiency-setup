@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-19 — best available lead clarification
+
+- Supersede the earlier routine-work lighter-lead policy: use the best available
+  model to lead (currently Astra), task-appropriate reasoning and cheaper capable
+  workers where delegation saves usage overall.
+- Ask before allowance-driven lead downgrades or scope reductions; retain all
+  usage safeguards and explicit user overrides. No automatic model switching.
+
 ## 2026-09-19 — task-fit model selection and usage protection proposal
 
 - Clarify the objective: best model/reasoning fit within all applicable limits.

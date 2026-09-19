@@ -1,10 +1,11 @@
-# Best-fit models within available usage
+# Best available lead within available usage
 
 ## Objective
 
-Use the best available model and reasoning setting for the task while protecting
-continued access across every applicable usage limit. Optimize useful, correct
-results within the allowance, not maximum model strength or minimum cost alone.
+Use the best available model to lead planning, orchestration, integration and final
+review—currently GPT-6 Astra—while protecting every applicable usage limit.
+Save usage through task-appropriate reasoning, focused context and cheaper capable
+workers, not by routinely substituting a weaker lead.
 Avoid exhaustion by reducing scope or saving progress and stopping before reserves
 are threatened. Do not promise uninterrupted execution of every task.
 
@@ -32,21 +33,24 @@ start a usage window; they consume resources and their benefit is not guaranteed
 
 ## Select model and reasoning together
 
-Match capability to difficulty, ambiguity, consequences of error, context size,
-tool needs, expected iterations and the available allowance. Use stronger reasoning
-where it materially improves correctness; use a capable lighter combination for
-routine work. Do not default to the strongest or cheapest option for every task.
+Keep the best available model as lead. Match its reasoning effort to difficulty,
+ambiguity, consequences of error, context size and tool needs; strongest model
+does not mean maximum reasoning for every task. Respect explicit user overrides.
 
-Astra leading with Luna on bounded execution is one useful arrangement, not a
-universal rule. Delegate only when expected savings exceed coordination overhead;
+Astra is the current lead recommendation, not a permanent model identifier.
+Verify availability on the target surface; official API availability alone does
+not establish ChatGPT/Codex account access. Review future candidates against
+current evidence. Select cheaper capable workers such as Luna for bounded work.
+Delegate only when expected savings exceed coordination overhead;
 consider total lead and worker usage and limit concurrency when reserves are tight.
 Do not assume a model switch provides a separate allowance or lower usage cost.
 Verify current availability and documented cost/limit behavior before relying on it.
 
 Respect explicit user model choices and local permissions. If the active surface
 cannot switch models/reasoning, recommend the appropriate choice and ask the user
-to change it; never claim a switch occurred. Do not silently downgrade quality on
-high-consequence work merely to fit a budget—reduce scope or stop for a decision.
+to change it; never claim a switch occurred. If allowance is insufficient, explain
+the tradeoff and ask before downgrading the lead or reducing scope. Save progress
+and stop safely while awaiting the decision; do not silently sacrifice correctness.
 
 ## Budget, recheck and stop safely
 
