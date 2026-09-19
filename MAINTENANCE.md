@@ -11,10 +11,12 @@ and project context on the relevant installation.
 
 ## Model releases and weekly review
 
-The objective is the best task-appropriate model AND reasoning setting within all
-applicable usage windows, with reserves and graceful stopping to reduce exhaustion
-risk. Follow USAGE_POLICY.md; do not hardcode one lead/worker pairing as universally
-optimal or promise that instructions can enforce account-wide limits.
+The objective is the best available lead model, task-appropriate reasoning and
+cheaper capable workers within all applicable usage windows. Preserve reserves
+and stop safely when necessary. Follow USAGE_POLICY.md; do not downgrade the lead
+merely because a task is routine. Ask before an allowance-driven downgrade or
+scope reduction. Reassess lead and worker recommendations as models change; never
+promise that instructions can enforce account-wide limits.
 
 Use official OpenAI documentation and release notes. Check availability, supported
 features, lead reasoning quality, delegated execution suitability, and documented
@@ -59,6 +61,9 @@ was consulted on 2026-09-19. Verify current documentation when proposing changes
 do not assume all ChatGPT surfaces read local Codex instruction files.
 
 Also consulted on 2026-09-19:
+- [Official Astra model page](https://developers.openai.com/api/docs/models/gpt-6-astra):
+  describes Astra as OpenAI's most capable model. Keeping the best available model
+  as lead is the owner's policy, not a claim that every surface can switch itself.
 - [Official usage and pricing guidance](https://learn.chatgpt.com/docs/pricing):
   usage depends on model, reasoning, context and tools; use current account readings
   rather than treating a video's savings figures as guarantees.
