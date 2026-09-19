@@ -83,11 +83,10 @@ update_top_level() {
   unset status
 }
 
-update_top_level model '"gpt-5.6-terra"'
-update_top_level model_reasoning_effort '"medium"'
+update_top_level model '"gpt-6-astra"'
+update_top_level model_reasoning_effort '"low"'
 update_top_level service_tier '"default"'
 mv "$config_tmp" "$config_target"
 
 printf 'Installed Codex efficiency defaults in %s\n' "$codex_home"
 printf '%s\n' 'Start a new Codex task for the global instructions to take effect.'
-

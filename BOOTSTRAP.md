@@ -51,11 +51,16 @@ Verify all of the following without exposing private configuration values:
 
 - The global `AGENTS.md` contains exactly one managed block between
   `codex-efficiency-setup:start` and `codex-efficiency-setup:end`.
-- Top-level Codex configuration selects `gpt-5.6-terra`, medium reasoning, and
+- Top-level Codex configuration selects `gpt-6-astra`, low reasoning, and
   `service_tier = "default"`.
 - Existing unrelated configuration remains present.
 - No plugin, MCP server, connection, credential, permission, project, or project-specific
   instruction was changed.
+
+When the app exposes a read-only usage-limit capability, read it after installation and
+report the remaining percentage and reset time. Calculate remaining percentage as
+`100 - usedPercent`. Do not redeem a reset credit, purchase credits, or modify spending
+controls.
 
 Do not print tokens, environment-variable values, OAuth data, or full configuration files.
 
@@ -66,7 +71,7 @@ Report:
 - Which files were changed.
 - Where backups were created.
 - Which defaults are now active.
+- The verified remaining Work/Codex allowance and reset time, when available.
 - That a new Codex task/session is required to load the global instructions.
 - Whether Chat/Work Personalization still requires the manual text in
   `CHATGPT_CUSTOM_INSTRUCTIONS.md`.
-

@@ -21,8 +21,11 @@ files.
 
 ## What it configures
 
-- GPT-5.6 Terra as the default Codex model for routine work.
-- Medium reasoning effort.
+- GPT-6 Astra as the lead Codex model, starting at low reasoning effort.
+- Usage-aware planning before substantial Work/Codex tasks when the app exposes
+  remaining allowance and reset information.
+- Delegation of narrow, bounded execution to GPT-5.6 Luna when supported and when
+  the saving is likely to exceed coordination overhead.
 - Standard processing (`service_tier = "default"`), so Fast mode is not the default.
 - Concise global Codex working agreements that favor targeted retrieval, proportionate
   tool use, reusable project context, economical delegation, and concise reporting.
@@ -84,4 +87,3 @@ from your Codex home.
 
 Codex's supported global and project instruction hierarchy is documented in the
 [official OpenAI documentation](https://developers.openai.com/es-419/docs/agent-configuration/agents-md).
-

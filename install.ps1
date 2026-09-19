@@ -61,8 +61,8 @@ if (Test-Path -LiteralPath $ConfigTarget) {
 }
 
 $Desired = [ordered]@{
-    model = '"gpt-5.6-terra"'
-    model_reasoning_effort = '"medium"'
+    model = '"gpt-6-astra"'
+    model_reasoning_effort = '"low"'
     service_tier = '"default"'
 }
 
@@ -97,4 +97,3 @@ for ($Index = $Missing.Count - 1; $Index -ge 0; $Index--) {
 
 Write-Host "Installed Codex efficiency defaults in $CodexHome"
 Write-Host 'Start a new Codex task for the global instructions to take effect.'
-
