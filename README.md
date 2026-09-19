@@ -2,6 +2,19 @@
 
 Portable, privacy-safe defaults for new Codex and ChatGPT installations.
 
+## One-line setup with Codex
+
+Send this instruction to a local Codex task:
+
+> Configure this installation from https://github.com/guivernl/codex-efficiency-setup
+
+The repository-level [AGENTS.md](AGENTS.md) directs Codex to follow
+[BOOTSTRAP.md](BOOTSTRAP.md), select the installer for the current operating system,
+preserve existing configuration, verify the result, and report what changed.
+
+A bare URL by itself is not a request to modify a computer. Include the words
+“Configure this installation from” so the agent has explicit authorization.
+
 This repository intentionally contains no credentials, account identifiers,
 machine paths, project names, plugin inventories, or complete user configuration
 files.
