@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "minimum_codex_version": "0.154.0",
+  "settings": {
+    "model": "gpt-6-astra",
+    "model_reasoning_effort": "low",
+    "service_tier": "default"
+  },
+  "agents_file": "AGENTS.md"
+}

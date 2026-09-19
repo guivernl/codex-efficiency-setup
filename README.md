@@ -1,89 +1,120 @@
 # Codex efficiency setup
 
-Portable, privacy-safe defaults for new Codex and ChatGPT installations.
-
-## One-line setup with Codex
-
-Send this instruction to a local Codex task:
+Portable, privacy-safe settings with owner-approved updates.
 
 > Configure this installation from https://github.com/guivernl/codex-efficiency-setup
 
-The repository-level [AGENTS.md](AGENTS.md) directs Codex to follow
-[BOOTSTRAP.md](BOOTSTRAP.md), select the installer for the current operating system,
-preserve existing configuration, verify the result, and report what changed.
+Codex follows [BOOTSTRAP.md](BOOTSTRAP.md), inspects the code, preserves unrelated
+settings and verifies installation. A bare link is not authorization to modify a
+machine. Editing this repository is not an installation request.
 
-A bare URL by itself is not a request to modify a computer. Include the words
-“Configure this installation from” so the agent has explicit authorization.
+## Defaults
 
-This repository intentionally contains no credentials, account identifiers,
-machine paths, project names, plugin inventories, or complete user configuration
-files.
+Astra leads planning, integration and review; Luna handles suitable bounded work.
+Read shared usage before substantial work when available. Use targeted retrieval,
+concise successful outputs, useful diagnostics, and existing project context.
 
-## What it configures
+`defaults/manifest.json` versions three managed root settings: `model`,
+`model_reasoning_effort`, and `service_tier` (Astra, low, standard by default).
+`defaults/AGENTS.md` supplies the managed instruction block. Named agents, global
+worker settings and project overrides remain local; explicitly selected workers
+can override the delegation recommendation. New managed keys require reviewed code.
 
-- GPT-6 Astra as the lead Codex model, starting at low reasoning effort.
-- Usage-aware planning before substantial Work/Codex tasks when the app exposes
-  remaining allowance and reset information.
-- Delegation of narrow, bounded execution to GPT-5.6 Luna when supported and when
-  the saving is likely to exceed coordination overhead.
-- Standard processing (`service_tier = "default"`), so Fast mode is not the default.
-- Concise global Codex working agreements that favor targeted retrieval, proportionate
-  tool use, reusable project context, economical delegation, and concise reporting.
+## One-time installation
 
-The installers preserve unrelated settings. Before changing an existing file, they
-create a timestamped backup in the same directory.
-
-## Install on Windows
-
-Clone or download this repository, open PowerShell in the repository directory, and run:
+Requires Python 3.11+ and a Codex CLI meeting the manifest's minimum version.
+Review the scripts first. From an approved checkout:
 
 ```powershell
+# Windows, no schedule
 .\install.ps1
 ```
 
-If your Codex home is in a nonstandard location:
-
-```powershell
-.\install.ps1 -CodexHome "D:\path\to\.codex"
-```
-
-## Install on macOS or Linux
-
-Clone or download this repository, then run:
-
 ```sh
+# Linux/macOS, no schedule
 sh ./install.sh
 ```
 
-To use a nonstandard Codex home:
+Both honor `CODEX_HOME`; PowerShell also accepts `-CodexHome`. These adopt the three
+managed settings. Put intentional local choices in overrides before installation.
+Unrelated instructions, credentials, connections, plugins, permissions and project
+configuration are not changed.
+
+## Approved daily updates
+
+From an **approved, reviewed checkout**:
 
 ```sh
-CODEX_HOME=/path/to/.codex sh ./install.sh
+# Use python3 on Linux where python is not installed.
+python install-sync.py --adopt --schedule
 ```
 
-Start a new Codex task after installation. Codex loads global `AGENTS.md`
-instructions when a new task/session begins.
+Pass `--codex-home PATH` for a separate home. Omit `--schedule` for manual updates.
+Enroll once per Codex home/user, not once per binary sharing that home. Initial
+adoption applies the reviewed checkout; scheduled checks resolve `main` to a commit
+and fetch immutable configuration data at that commit.
+
+- Windows: daily 09:00 local, current interactive user, no password stored, no wake;
+  catches up when available. Laptop must be powered on and user logged in.
+- Linux: daily 09:00 local plus up to ten minutes jitter, persistent systemd user
+  timer. Running after logout/reboot requires a running user manager, commonly
+  administrator-approved lingering; this installer does not enable it.
+- macOS: manual updater only; automatic scheduling is not implemented.
+
+The daily updater calls no models and uploads no local configuration. It fetches
+data, not executable code. Updater-code changes require a reviewed reinstall.
+
+Manual preview (default) and application:
+
+```sh
+python /path/to/codex-home/efficiency-sync/sync.py --codex-home /path/to/codex-home
+python /path/to/codex-home/efficiency-sync/sync.py --codex-home /path/to/codex-home --apply
+```
+
+There is no universal pre-task hook. An authorized agent may invoke a check before
+substantial work. Existing tasks may retain loaded settings; start a new task or
+restart manually as needed. No automatic restarts, CLI upgrades or spending changes.
+
+## Local overrides and conflicts
+
+Create `<Codex home>/efficiency-sync/overrides.json` locally, never in this repo:
+
+```json
+{"model_reasoning_effort": "medium"}
+```
+
+Only the same three managed keys are accepted. After manually editing a managed
+setting, add a matching override or sync stops rather than overwriting the edit.
+Local edits/removal of the managed instruction block also stop synchronization.
+Keep extra instructions outside the markers. Resolve conflicts manually; do not
+blindly delete the state record to silence an error.
+
+## Review, status and rollback
+
+Follow [MAINTENANCE.md](MAINTENANCE.md). Weekly research proposes PRs; the owner
+approves and merges to `main`. Clients then pick up that data. The weekly AI review
+must be scheduled separately in the Codex app; repo files alone don't schedule it.
+
+Protect `main` with required PRs/checks where available. Clients trust the branch:
+they cannot distinguish an approved merge from an owner's direct push. Instruction
+text is trusted configuration even though it is not executable code.
+
+`<Codex home>/efficiency-sync/state.json` records applied version/commit. Private
+rollback copies are in `backups`; they may contain sensitive configuration and must
+never be uploaded. No automatic backup pruning is performed. Inspect a stale
+`sync.lock` after a crash; remove it only after confirming no sync process is running.
+
+Pause Linux updates with `systemctl --user disable --now codex-efficiency-sync.timer`.
+On Windows disable **Codex Efficiency Sync** in Task Scheduler. Check task history
+or the user journal for failures. Disable scheduling before rollback, then restore
+matching configuration, instructions and state backups. If previous state did not
+exist, remove the new state record after restoring the original files.
 
 ## ChatGPT and Work
 
-Codex reads the installed global `AGENTS.md`. Chat and Work do not use that file.
-For those surfaces, append the text in [CHATGPT_CUSTOM_INSTRUCTIONS.md](CHATGPT_CUSTOM_INSTRUCTIONS.md)
-to **Settings → Personalize**, preserving any useful instructions already present.
+Local file sync does not update Personalization. On surfaces without local access,
+manually append [CHATGPT_CUSTOM_INSTRUCTIONS.md](CHATGPT_CUSTOM_INSTRUCTIONS.md),
+retaining useful existing instructions. Keep project-specific context in Projects.
 
-Project-specific instructions should stay inside their relevant ChatGPT Project or
-repository. They should not be copied into the global file.
-
-## Uninstall or roll back
-
-The installer labels its addition inside `AGENTS.md` with managed comment markers.
-Remove that marked block to remove the global efficiency instructions. Restore a
-timestamped `.bak-*` file if you want to revert all changes from an installation.
-
-## Security
-
-Review scripts before running them. Do not commit your complete `config.toml`, tokens,
-OAuth data, plugin connection data, hostnames, personal project names, or files copied
-from your Codex home.
-
-Codex's supported global and project instruction hierarchy is documented in the
-[official OpenAI documentation](https://developers.openai.com/es-419/docs/agent-configuration/agents-md).
+See [SECURITY.md](SECURITY.md): never publish credentials, account/server IDs, private
+paths, complete configs, connection state or raw task transcripts.

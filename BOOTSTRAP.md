@@ -1,77 +1,26 @@
 # Installation bootstrap
 
-Follow this procedure when the user has explicitly asked to configure their current
-installation from this repository.
+Only follow when explicitly asked to configure an installation. Repository
+maintenance is not installation authorization.
 
-## 1. Confirm capability
+1. Confirm local file/command access. Without it provide
+   `CHATGPT_CUSTOM_INSTRUCTIONS.md` for manual Personalization; do not claim setup.
+2. Read `README.md`, `sync.py`, the applicable installer, `defaults/manifest.json`,
+   and `defaults/AGENTS.md` completely. For recurring sync also read `install-sync.py`.
+   Verify Python 3.11+ and the manifest's Codex compatibility floor.
+3. Use approved main, not a pending PR except explicitly authorized disposable
+   testing. Inspect useful local values and agree overrides before adoption.
+4. One-time: run `install.ps1` or `sh install.sh`. For explicitly requested ongoing
+   sync: `python install-sync.py --adopt --schedule` (python3 on Linux).
+   Respect `CODEX_HOME` or pass a home. Don't enroll out-of-scope/retiring machines.
+5. Verify one managed block, manifest values plus overrides, valid TOML, private
+   backups, unchanged unrelated settings, and the requested schedule. Scheduling
+   errors are not success. Never silently change privileges, enable lingering,
+   restart apps or alter connections to repair scheduling.
+6. Report version, files, backups, schedule, activation boundaries and manual steps.
+   New tasks load new instructions; an explicit current model may override defaults.
 
-Determine whether the current surface has local filesystem and command execution access.
-
-- In a local Codex task, continue with the installation.
-- In Chat or Work without local execution access, do not claim to have configured the
-  computer. Provide `CHATGPT_CUSTOM_INSTRUCTIONS.md` and explain that Personalization is
-  the remaining manual step.
-
-Do not request information already available from the environment. Do not ask the user
-to choose an operating system when it can be detected locally.
-
-## 2. Inspect before execution
-
-Read the applicable installer and the files it consumes:
-
-- Windows: `install.ps1` and `defaults/AGENTS.md`
-- macOS or Linux: `install.sh` and `defaults/AGENTS.md`
-
-Stop if the checked-out files differ materially from the documented behavior, attempt
-to transmit local data, or contain credentials.
-
-## 3. Install
-
-Run the installer appropriate for the current operating system from the repository root.
-
-Windows:
-
-```powershell
-.\install.ps1
-```
-
-macOS or Linux:
-
-```sh
-sh ./install.sh
-```
-
-Respect `CODEX_HOME` when it is already defined. Otherwise use the normal Codex home.
-The installer must preserve unrelated settings and create timestamped backups before
-modifying existing files.
-
-## 4. Verify
-
-Verify all of the following without exposing private configuration values:
-
-- The global `AGENTS.md` contains exactly one managed block between
-  `codex-efficiency-setup:start` and `codex-efficiency-setup:end`.
-- Top-level Codex configuration selects `gpt-6-astra`, low reasoning, and
-  `service_tier = "default"`.
-- Existing unrelated configuration remains present.
-- No plugin, MCP server, connection, credential, permission, project, or project-specific
-  instruction was changed.
-
-When the app exposes a read-only usage-limit capability, read it after installation and
-report the remaining percentage and reset time. Calculate remaining percentage as
-`100 - usedPercent`. Do not redeem a reset credit, purchase credits, or modify spending
-controls.
-
-Do not print tokens, environment-variable values, OAuth data, or full configuration files.
-
-## 5. Report
-
-Report:
-
-- Which files were changed.
-- Where backups were created.
-- Which defaults are now active.
-- The verified remaining Work/Codex allowance and reset time, when available.
-- That a new Codex task/session is required to load the global instructions.
-- Whether Chat/Work Personalization still requires the manual text in
-  `CHATGPT_CUSTOM_INSTRUCTIONS.md`.
+Read shared usage before substantial work when available; remaining allowance is
+100 minus usedPercent. Note reset time. Never redeem credits, change spending,
+expose credentials or full configuration, or alter plugins, permissions, project
+instructions, authentication or connections as part of this setup.
