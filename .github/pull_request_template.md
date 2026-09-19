@@ -1,14 +1,14 @@
-## Finding and proposed change
+## Proposed instruction change
 
-## Official sources and date checked
+## Evidence and dated official sources
 
-## Surfaces / versions tested
+## Affected surfaces and limitations
 
-## Validation
+## Review checklist
 
-- [ ] Unit tests pass on Windows and Linux
-- [ ] Manifest version incremented for distributed content changes
-- [ ] Unrelated configuration and local overrides preserved
-- [ ] No private identifiers, credentials, configurations or transcripts included
-- [ ] Compatibility, activation and rollback documented
-- [ ] Owner approval required before merge; no automatic restart or spending change
+- [ ] Instructions only; no installer or background updater
+- [ ] Existing custom instructions preserved, including inside older marked blocks
+- [ ] Conflicts and settings changes require explicit user approval
+- [ ] Guidance is consistent and relative links work
+- [ ] No private details, credentials or raw configurations
+- [ ] Changelog updated; owner approval required before merge

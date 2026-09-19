@@ -1,9 +1,5 @@
-__pycache__/
-*.pyc
-.venv/
-.test-home/
 *.bak-*
-overrides.json
-state.json
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc

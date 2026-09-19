@@ -1,11 +1,13 @@
 # Changelog
 
-## 2026-09-19 — versioned synchronization
+## 2026-09-19 — instructions-only maintenance proposal
 
-- Add a narrow, data-only settings updater and opt-in daily scheduling.
-- Preserve local overrides, detect drift, and retain private rollback copies.
-- Establish weekly evidence-based review and owner-approved PR publication.
-- No model change: Astra leads, Luna handles suitable bounded delegation.
-- Existing installations must enroll once; updater-code changes require reinstall.
+- Replace scripted installation and synchronization with an on-request instruction merge.
+- Preserve existing custom instructions, including text inside older marked blocks.
+- Ask before resolving conflicts or changing model/settings preferences.
+- Keep new findings and model reviews behind owner-approved pull requests.
+- No automatic updates or background installation; apply approved guidance per
+  installation only when requested.
 
-See `MAINTENANCE.md` for official sources, review policy, and activation limits.
+The earlier updater implementation in this PR was withdrawn before merge or
+enrollment on real installations.
