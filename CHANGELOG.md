@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-19 — live status first
+
+- Add the owner's live-status-first preference to portable and ChatGPT guidance:
+  use authorized read-only status capabilities and avoid optional research or
+  delegation for straightforward status questions.
+- Preserve mandatory skill requirements and report missing live access honestly.
+  No bundled skill edits or claims that documentation supplies current account state.
+
 ## 2026-09-19 — best available lead clarification
 
 - Supersede the earlier routine-work lighter-lead policy: use the best available

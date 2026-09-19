@@ -15,6 +15,14 @@ that an installation will never run out. Never claim to reserve account capacity
 
 ## Read all available limits
 
+For a simple current-status question, prefer the relevant authorized read-only
+status capability and a direct answer. Avoid optional documentation research or
+delegation unless the result is unclear or the user asks for an explanation.
+Mandatory skill and higher-priority requirements still apply, including required
+research. This is not permission to skip them or edit bundled skills. If live
+access is unavailable, report that limitation; documentation cannot establish the
+account's current usage, active model, task state or connection state.
+
 Before substantial work, use the surface's read-only usage capability when available.
 Check every reported window or bucket: five-hour, weekly, model-specific and any
 other applicable limits. Interpret each using its reported unit and duration; do

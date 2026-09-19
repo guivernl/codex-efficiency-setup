@@ -37,6 +37,10 @@ can select models, delegate work, read usage, or change persistent settings.
 
 ## Your existing instructions stay yours
 
+For straightforward live-status questions, prefer a direct read-only status check
+over optional research or delegation. Mandatory skill requirements still apply;
+these instructions do not disable bundled skills or guarantee a single tool call.
+
 None of these files should replace an entire local instruction document.
 Codex must read existing guidance first, add only missing non-conflicting guidance,
 and preserve custom text both inside and outside any older marked section.
