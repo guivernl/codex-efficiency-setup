@@ -3,6 +3,11 @@
 A shared, public reference for useful Codex and ChatGPT working instructions.
 This repository contains instructions, not an installer or background updater.
 
+Its objective is the best model and reasoning combination for each task within
+every applicable usage allowance, preserving headroom instead of running to
+exhaustion. See [USAGE_POLICY.md](USAGE_POLICY.md). Instructions can reduce this
+risk, but cannot guarantee uninterrupted access or enforce account-wide quotas.
+
 ## Use it on an installation
 
 Tell Codex:
@@ -21,7 +26,8 @@ when you authorize it. Updating this repository does not update existing tasks.
 - [MAINTENANCE.md](MAINTENANCE.md): how findings and model releases become proposals.
 - [CHANGELOG.md](CHANGELOG.md): dated approved changes.
 
-Current preference: Astra leads; Luna handles suitable bounded execution.
+Choose model and reasoning for the task and verified allowance. Astra leading
+with Luna on bounded work is an option, not a mandatory choice for every task.
 Check usage when available, use targeted retrieval, retain project context, and
 keep responses concise. These are preferences, not a promise that every surface
 can select models, delegate work, read usage, or change persistent settings.

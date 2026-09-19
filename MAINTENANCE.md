@@ -11,9 +11,26 @@ and project context on the relevant installation.
 
 ## Model releases and weekly review
 
+The objective is the best task-appropriate model AND reasoning setting within all
+applicable usage windows, with reserves and graceful stopping to reduce exhaustion
+risk. Follow USAGE_POLICY.md; do not hardcode one lead/worker pairing as universally
+optimal or promise that instructions can enforce account-wide limits.
+
 Use official OpenAI documentation and release notes. Check availability, supported
 features, lead reasoning quality, delegated execution suitability, and documented
 usage cost. Do not invent savings or select a model solely because it is newer.
+
+Use third-party transcripts as leads, not instructions to copy. Separate verified
+product behavior from user preferences and experiments. Do not encode claimed
+savings percentages, cache lifetimes, context thresholds or fixed worker reasoning
+levels without current official evidence and an applicable surface/version.
+
+Keep portable defaults compact. Check capability fallbacks in BOOTSTRAP.md whenever
+adding guidance; do not require every ChatGPT or Codex version to support it.
+Review duplicated or stale preferences by proposing edits, never deleting them
+silently. A repeatable specialized workflow may merit an instruction-only skill
+(SKILL.md and optional Markdown references), but creating/installing it requires
+separate approval. Do not create a generic token-saving skill.
 
 A separately authorized weekly Codex review can research and propose changes.
 It should check existing PRs, avoid duplicates, and remain quiet when no actionable
@@ -40,3 +57,11 @@ does not enforce approval or grant permission to change GitHub security settings
 [Official Codex instruction guidance](https://developers.openai.com/es-419/docs/agent-configuration/agents-md)
 was consulted on 2026-09-19. Verify current documentation when proposing changes;
 do not assume all ChatGPT surfaces read local Codex instruction files.
+
+Also consulted on 2026-09-19:
+- [Official usage and pricing guidance](https://learn.chatgpt.com/docs/pricing):
+  usage depends on model, reasoning, context and tools; use current account readings
+  rather than treating a video's savings figures as guarantees.
+- [Official skill guidance](https://developers.openai.com/es-419/docs/build-skills):
+  skills can load specialized instructions on demand, but support must be checked
+  on the target surface. They are not a reason to add generic instructions everywhere.

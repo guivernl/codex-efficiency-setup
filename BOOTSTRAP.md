@@ -5,12 +5,25 @@ Read approved main, not a pending proposal, unless the user asks to review that 
 
 ## Inspect first
 
-Read README.md and defaults/AGENTS.md. For ChatGPT also read
+Read README.md, USAGE_POLICY.md and defaults/AGENTS.md. For ChatGPT also read
 CHATGPT_CUSTOM_INSTRUCTIONS.md. Inspect applicable existing global and project
 instructions using the current surface's supported capabilities. Do not assume
 every installation uses the same paths, model choices, or features.
 
 Keep private configuration local. Do not print or upload full settings or credentials.
+
+Check capabilities rather than assuming a product name or version guarantees them:
+
+| Capability unavailable | Safe fallback |
+| --- | --- |
+| Usage readings | Mark limits unknown; request a current panel reading when needed. |
+| Model or reasoning selection | Recommend a choice for the user; do not claim to switch. |
+| Model-selectable subagents | Do focused sequential work; do not pretend delegation occurred. |
+| Persistent instruction editing | Provide a small proposed addition for manual application. |
+| Skills | Keep a specialized workflow as optional Markdown guidance. |
+
+Use only supported capabilities and authorized access. A repository link in saved
+instructions does not establish that its contents were fetched or applied.
 
 ## Merge, never replace
 
