@@ -11,6 +11,11 @@ and project context on the relevant installation.
 
 ## Model releases and weekly review
 
+The objective is the best task-appropriate model AND reasoning setting within all
+applicable usage windows, with reserves and graceful stopping to reduce exhaustion
+risk. Follow USAGE_POLICY.md; do not hardcode one lead/worker pairing as universally
+optimal or promise that instructions can enforce account-wide limits.
+
 Use official OpenAI documentation and release notes. Check availability, supported
 features, lead reasoning quality, delegated execution suitability, and documented
 usage cost. Do not invent savings or select a model solely because it is newer.

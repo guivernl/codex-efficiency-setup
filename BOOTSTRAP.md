@@ -5,7 +5,7 @@ Read approved main, not a pending proposal, unless the user asks to review that 
 
 ## Inspect first
 
-Read README.md and defaults/AGENTS.md. For ChatGPT also read
+Read README.md, USAGE_POLICY.md and defaults/AGENTS.md. For ChatGPT also read
 CHATGPT_CUSTOM_INSTRUCTIONS.md. Inspect applicable existing global and project
 instructions using the current surface's supported capabilities. Do not assume
 every installation uses the same paths, model choices, or features.
