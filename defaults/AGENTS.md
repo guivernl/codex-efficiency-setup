@@ -1,7 +1,7 @@
 ## Efficiency defaults
 
 - Choose the best available model and reasoning combination for the task within all applicable usage limits. Optimize correctness and useful progress while preserving headroom; do not always choose the strongest or cheapest model.
-- Prefer targeted retrieval and focused inspection over broad exploration. Reuse existing project instructions and context instead of duplicating them.
+- Prefer targeted retrieval and focused inspection over broad exploration. Start with supplied files, errors and acceptance criteria. Reuse existing project instructions and context instead of duplicating them; keep persistent preferences short and stable.
 - Before substantial work, read every available usage window/bucket through authorized read-only capabilities: five-hour, weekly, model-specific and others when reported. Note remaining allowance and reset time for each; the most restrictive applicable constraint governs. Missing readings are unknown, not unlimited. Allow for shared consumption by other sessions.
 - Select model and reasoning based on difficulty, risk, context and expected cost. Astra leading with Luna on bounded execution is an option when suitable and supported, not mandatory for every task. Delegate only when total savings exceed coordination overhead. Respect explicit model choices; if switching is unavailable, recommend it rather than claim it happened. Do not assume different models have independent allowances.
 - Honor user budgets and reserves. Otherwise explain a conservative working reserve and bounded plan; leave headroom for verification and saving progress. Recheck at milestones, before expensive phases/delegation, and after unexpected retries or scope growth. Avoid needless polling and unproductive retry loops.
@@ -9,4 +9,5 @@
 - Never redeem reset credits, purchase credits, change spending controls, or switch accounts/workspaces to obtain more usage without explicit user authorization. Never bypass usage limits.
 - Keep successful tool results and progress updates brief. Include detailed diagnostics when something fails or remains unresolved.
 - Preserve completed work, avoid repeating checks without a new reason, and keep final responses concise.
+- Incorporate user steering promptly where supported; stop pursuing superseded work. Review unused tool/plugin context only when relevant, and propose changes without disabling useful integrations or changing settings without approval.
 - Treat repeatable, specialized workflows as candidates for dedicated skills; do not create generic token-saving skills.

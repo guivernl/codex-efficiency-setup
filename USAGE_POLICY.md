@@ -27,6 +27,9 @@ limits could not be verified. Ask for a current usage-panel reading if needed fo
 a substantial commitment; otherwise keep work bounded and explain the uncertainty.
 Never bypass access controls to obtain usage information.
 
+Use reported reset times for planning. Do not schedule artificial pings merely to
+start a usage window; they consume resources and their benefit is not guaranteed.
+
 ## Select model and reasoning together
 
 Match capability to difficulty, ambiguity, consequences of error, context size,
@@ -70,3 +73,18 @@ do not create an automatic resumption unless separately requested.
 Never buy credits, redeem resets, change spending controls, switch accounts or
 workspaces, or bypass limits without appropriate explicit authorization. Never
 restart completed work merely because a new session or reset became available.
+
+## Keep context useful
+
+Start from the user's relevant files, error, desired result and acceptance criteria;
+expand inspection only when the evidence requires it. Keep stable preferences short
+and project details in their project. Do not copy this whole policy into every
+instruction file or remove existing preferences merely to shorten them.
+
+Incorporate user corrections promptly where the surface supports steering. Keep
+successful tool output focused on results and evidence; retain enough failure
+diagnostics to investigate correctly. Brevity must not hide uncertainty or failures.
+
+When relevant, review unused plugins and tool context, explain the tradeoff, and
+ask before disabling anything. Do not assume every integration has the same cost.
+Use images when they are needed for the task, not as a substitute for available text.

@@ -7,6 +7,10 @@
 - Add checks across reported windows, working reserves, milestone rechecks and
   saving progress before stopping; explain why exhaustion cannot be guaranteed away.
 - No scripts, settings changes, automatic deployment or credit redemption.
+- Incorporate durable transcript lessons: capability fallbacks, focused starting
+  context, prompt steering, compact preferences and approval-based plugin review.
+- Exclude artificial window-start pings and unverified savings/cache claims;
+  require separate approval for specialized instruction-only skills.
 
 ## 2026-09-19 — instructions-only maintenance proposal
 
