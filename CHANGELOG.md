@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-28 — model review proposal
+
+- Record GPT-6 Sol/Luna worker candidates, rate and availability caveats, targeted
+  visual reevaluation after the image fix, and GPT-5.5 retirement guidance.
+- Keep Astra lead policy and existing settings unchanged; distinguish usage
+  analytics from allowance. No scripts, skills, installers or deployment.
+
 ## 2026-09-19 — reset-aware pacing and direct publication
 
 - Add remaining-time pacing per reported usage window, reserves, shared-session
