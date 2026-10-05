@@ -1,7 +1,40 @@
 # Model and compatibility review — 2026-09-28
 
+Follow-up reviewed on 2026-10-05; the original dated observations remain below.
+
 Optional maintenance reference, not additional always-loaded instructions.
 No settings or installations are changed by this document.
+
+## October 5 follow-up
+
+The [official model guidance](https://learn.chatgpt.com/docs/models) now identifies
+GPT-6.1 Sol as a near-Astra option for complex, repeated work; Astra remains the
+most capable model. Evaluate 6.1 Sol as a stronger worker candidate where Luna is
+insufficient, not as an automatic replacement for the owner's Astra lead.
+Availability depends on plan, client and workspace controls; Work/Codex access
+does not imply ordinary Chat access. A changed client default is not permission
+to overwrite an explicit choice.
+
+Choose reasoning separately: current guidance suggests the client's default for
+6.1 Sol, High for Luna and Light for Astra as starting points, then adjust to the
+task. Reasoning settings are not equivalent across generations. These are optional
+evaluation baselines, not new mandatory worker presets or installation changes.
+
+The [pricing page](https://learn.chatgpt.com/docs/pricing), checked October 5,
+lists 6.1 Sol at the same input/output credit rates as 6 Sol and a lower cached-input
+rate. This is not a guaranteed reduction in total task usage or included allowance.
+It also distinguishes speed surcharges: Fast uses 2.5x included subscription
+usage versus 2x purchased credits; Astra Ultrafast uses 8x versus 6x respectively,
+relative to Standard for the same model. Eligibility varies. Leave speed settings
+unchanged; do not enable a faster mode to save quota or treat billing multipliers
+as speed measurements. Check live limits and the applicable billing surface.
+
+The [retirement notice](https://learn.chatgpt.com/docs/changelog) still lists
+October 14 for GPT-5.5 in ChatGPT/Work/Codex, not API. The previously proposed
+authorized settings review remains relevant; this follow-up does not perform it.
+
+These sources were opened on 2026-10-05. Reverify before applying; no new skill or
+automatic synchronization is proposed.
 
 ## Worker candidates
 
@@ -43,5 +76,5 @@ New CLI usage analytics include token totals and skill/plugin activity. Use thes
 for targeted overhead investigations when available, but do not confuse activity
 totals with remaining account allowance or assume every surface exposes them.
 
-All sources were opened on 2026-09-28. Reverify availability, prices and retirement
+The original review sources were opened on 2026-09-28. Reverify availability, prices and retirement
 status when applying these findings. No generic efficiency skill is warranted.

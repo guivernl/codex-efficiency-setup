@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-05 — weekly proposal follow-up
+
+- Extend the existing unmerged model review with GPT-6.1 Sol worker evaluation,
+  reasoning baselines and distinct subscription/credit speed multipliers.
+- Preserve Astra lead policy and all installed settings; no duplicate proposal,
+  executable helpers, skills or deployment.
+
 ## 2026-09-28 — model review proposal
 
 - Record GPT-6 Sol/Luna worker candidates, rate and availability caveats, targeted
