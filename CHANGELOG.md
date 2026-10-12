@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-12 — weekly proposal follow-up
+
+- Note Sol Ultrafast availability and usage premium, and the documented
+  plan-specific five-hour distinction without inferring missing live readings.
+- Keep existing model choices, installations and usage safeguards unchanged;
+  extend the open proposal rather than creating a duplicate.
+
 ## 2026-10-05 — weekly proposal follow-up
 
 - Extend the existing unmerged model review with GPT-6.1 Sol worker evaluation,

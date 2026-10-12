@@ -1,9 +1,33 @@
 # Model and compatibility review — 2026-09-28
 
-Follow-up reviewed on 2026-10-05; the original dated observations remain below.
+Follow-ups reviewed on 2026-10-05 and 2026-10-12; dated observations remain below.
 
 Optional maintenance reference, not additional always-loaded instructions.
 No settings or installations are changed by this document.
+
+## October 12 follow-up
+
+The [October 5-9 release digest](https://learn.chatgpt.com/docs/whats-new/october-5-9-2026)
+announces GPT-6.1 Sol Ultrafast for Work/Codex on Pro $500 and eligible
+Enterprise/Edu plans, with Enterprise enablement required. This is a speed option,
+not evidence for changing the lead model or automatically enabling it.
+
+The [pricing page](https://learn.chatgpt.com/docs/pricing), checked October 12,
+lists Sol Ultrafast at 8x included usage or 6x purchased-credit/pay-as-you-go usage
+relative to Standard. Keep the earlier recommendation to leave speed settings
+unchanged unless the user authorizes the latency-versus-allowance tradeoff.
+
+The same page currently states that Pro has no five-hour limit; its five-hour
+message estimates apply to Plus and Standard Business. Do not require a five-hour
+counter on every installation or infer an account's plan from a missing counter.
+Verify the actual plan and all reported windows; an absent live reading remains
+unknown, and documentation does not establish remaining account allowance.
+
+GPT-5.5's announced October 14 retirement is now imminent. The existing proposal
+to review saved selections with authorization still applies; no installation
+audit or migration is performed by this weekly repository review.
+
+Sources opened on 2026-10-12. These are dated findings, not permanent plan rules.
 
 ## October 5 follow-up
 
