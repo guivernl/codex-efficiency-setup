@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-19 — weekly proposal follow-up
+
+- Record effective GPT-5.5 retirement for ChatGPT-authenticated Codex and retain
+  authorization boundaries for any replacement.
+- Clarify Max versus Ultra delegation, and distinguish Ultra from Ultrafast;
+  keep installed settings and Astra lead preference unchanged.
+
 ## 2026-10-12 — weekly proposal follow-up
 
 - Note Sol Ultrafast availability and usage premium, and the documented

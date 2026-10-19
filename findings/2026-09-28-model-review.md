@@ -1,9 +1,28 @@
 # Model and compatibility review — 2026-09-28
 
-Follow-ups reviewed on 2026-10-05 and 2026-10-12; dated observations remain below.
+Latest follow-up: 2026-10-19. Earlier dated observations remain below.
 
 Optional maintenance reference, not additional always-loaded instructions.
 No settings or installations are changed by this document.
+
+## October 19 follow-up
+
+The [current model documentation](https://learn.chatgpt.com/docs/models), opened
+October 19, confirms GPT-5.5 retirement from Codex with ChatGPT sign-in effective
+October 14 at 19:00 UTC. API-key sessions are unaffected. Earlier future-tense
+notices below are historical. During an authorized settings review, identify
+remaining selections and obtain approval for a supported replacement; do not
+retry an unavailable selection indefinitely or switch authentication for access.
+The general replacement recommendation does not override this owner's Astra lead
+preference or authorize changing installed settings.
+
+The same documentation distinguishes Max (deeper single-task reasoning) from
+Ultra (parallel subagents); Luna supports Max but not Ultra. Treat Ultra as a
+delegation decision with coordination and shared-usage costs, not simply a higher
+single-agent reasoning preset. Use it only for meaningfully separable work when
+available and appropriate. Ultra reasoning and Ultrafast speed are different
+controls; neither is a quota-saving default. Preserve explicit model choices and
+verify the controls on the actual client. No automatic changes are proposed.
 
 ## October 12 follow-up
 
