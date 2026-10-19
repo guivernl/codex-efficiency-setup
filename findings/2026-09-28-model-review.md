@@ -1,0 +1,123 @@
+# Model and compatibility review — 2026-09-28
+
+Latest follow-up: 2026-10-19. Earlier dated observations remain below.
+
+Optional maintenance reference, not additional always-loaded instructions.
+No settings or installations are changed by this document.
+
+## October 19 follow-up
+
+The [current model documentation](https://learn.chatgpt.com/docs/models), opened
+October 19, confirms GPT-5.5 retirement from Codex with ChatGPT sign-in effective
+October 14 at 19:00 UTC. API-key sessions are unaffected. Earlier future-tense
+notices below are historical. During an authorized settings review, identify
+remaining selections and obtain approval for a supported replacement; do not
+retry an unavailable selection indefinitely or switch authentication for access.
+The general replacement recommendation does not override this owner's Astra lead
+preference or authorize changing installed settings.
+
+The same documentation distinguishes Max (deeper single-task reasoning) from
+Ultra (parallel subagents); Luna supports Max but not Ultra. Treat Ultra as a
+delegation decision with coordination and shared-usage costs, not simply a higher
+single-agent reasoning preset. Use it only for meaningfully separable work when
+available and appropriate. Ultra reasoning and Ultrafast speed are different
+controls; neither is a quota-saving default. Preserve explicit model choices and
+verify the controls on the actual client. No automatic changes are proposed.
+
+## October 12 follow-up
+
+The [October 5-9 release digest](https://learn.chatgpt.com/docs/whats-new/october-5-9-2026)
+announces GPT-6.1 Sol Ultrafast for Work/Codex on Pro $500 and eligible
+Enterprise/Edu plans, with Enterprise enablement required. This is a speed option,
+not evidence for changing the lead model or automatically enabling it.
+
+The [pricing page](https://learn.chatgpt.com/docs/pricing), checked October 12,
+lists Sol Ultrafast at 8x included usage or 6x purchased-credit/pay-as-you-go usage
+relative to Standard. Keep the earlier recommendation to leave speed settings
+unchanged unless the user authorizes the latency-versus-allowance tradeoff.
+
+The same page currently states that Pro has no five-hour limit; its five-hour
+message estimates apply to Plus and Standard Business. Do not require a five-hour
+counter on every installation or infer an account's plan from a missing counter.
+Verify the actual plan and all reported windows; an absent live reading remains
+unknown, and documentation does not establish remaining account allowance.
+
+GPT-5.5's announced October 14 retirement is now imminent. The existing proposal
+to review saved selections with authorization still applies; no installation
+audit or migration is performed by this weekly repository review.
+
+Sources opened on 2026-10-12. These are dated findings, not permanent plan rules.
+
+## October 5 follow-up
+
+The [official model guidance](https://learn.chatgpt.com/docs/models) now identifies
+GPT-6.1 Sol as a near-Astra option for complex, repeated work; Astra remains the
+most capable model. Evaluate 6.1 Sol as a stronger worker candidate where Luna is
+insufficient, not as an automatic replacement for the owner's Astra lead.
+Availability depends on plan, client and workspace controls; Work/Codex access
+does not imply ordinary Chat access. A changed client default is not permission
+to overwrite an explicit choice.
+
+Choose reasoning separately: current guidance suggests the client's default for
+6.1 Sol, High for Luna and Light for Astra as starting points, then adjust to the
+task. Reasoning settings are not equivalent across generations. These are optional
+evaluation baselines, not new mandatory worker presets or installation changes.
+
+The [pricing page](https://learn.chatgpt.com/docs/pricing), checked October 5,
+lists 6.1 Sol at the same input/output credit rates as 6 Sol and a lower cached-input
+rate. This is not a guaranteed reduction in total task usage or included allowance.
+It also distinguishes speed surcharges: Fast uses 2.5x included subscription
+usage versus 2x purchased credits; Astra Ultrafast uses 8x versus 6x respectively,
+relative to Standard for the same model. Eligibility varies. Leave speed settings
+unchanged; do not enable a faster mode to save quota or treat billing multipliers
+as speed measurements. Check live limits and the applicable billing surface.
+
+The [retirement notice](https://learn.chatgpt.com/docs/changelog) still lists
+October 14 for GPT-5.5 in ChatGPT/Work/Codex, not API. The previously proposed
+authorized settings review remains relevant; this follow-up does not perform it.
+
+These sources were opened on 2026-10-05. Reverify before applying; no new skill or
+automatic synchronization is proposed.
+
+## Worker candidates
+
+The [official release notes](https://learn.chatgpt.com/docs/changelog) announce
+GPT-6 Sol and Luna on September 22 for Work and Codex, subject to rollout and
+workspace access, not ordinary Chat. Sol targets complex coding/agentic work;
+Luna targets focused high-volume tasks. Verify the actual model picker and worker
+controls before recommending a switch on an older installation.
+
+The [current credit table](https://learn.chatgpt.com/docs/pricing), checked on
+September 28, lists lower input, cached-input and output rates for GPT-6 Sol/Luna
+than their GPT-5.6 counterparts. This supports evaluating them as worker candidates,
+not promising task-level savings: reasoning, retries, context and verification
+also consume usage. API dollar prices are not subscription quota percentages.
+
+Recommendation: preserve the owner's best-available-lead policy (currently Astra).
+Evaluate GPT-6 Luna for bounded routine work and Sol when workers need stronger
+capability. Choose supported reasoning per task rather than automatically carrying
+forward an old max/xhigh preset. Explicit user choices and local settings remain
+unchanged until an authorized migration; do not rename or rewrite saved workers
+merely because new models exist.
+
+## Visual-task reevaluation
+
+The [API changelog](https://developers.openai.com/api/docs/changelog) records a
+September 25 image-encoding fix for GPT-6 Sol/Luna affecting API and Codex visual
+tasks. Reconsider earlier negative visual evaluations where relevant. Rerun only
+the affected checks within an authorized task and budget, not completed unrelated
+work or side-effecting workflows automatically.
+
+## Retirement and status checks
+
+The [product changelog](https://learn.chatgpt.com/docs/changelog) also documents
+GPT-5.5 retirement from ChatGPT, Work and Codex on October 14; API is unaffected.
+During an authorized settings review, identify saved selections and propose a
+compatible replacement. Do not silently alter an explicit user model choice.
+
+New CLI usage analytics include token totals and skill/plugin activity. Use these
+for targeted overhead investigations when available, but do not confuse activity
+totals with remaining account allowance or assume every surface exposes them.
+
+The original review sources were opened on 2026-09-28. Reverify availability, prices and retirement
+status when applying these findings. No generic efficiency skill is warranted.

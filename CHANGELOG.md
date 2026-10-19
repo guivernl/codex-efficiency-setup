@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-10-19 — weekly proposal follow-up
+
+- Record effective GPT-5.5 retirement for ChatGPT-authenticated Codex and retain
+  authorization boundaries for any replacement.
+- Clarify Max versus Ultra delegation, and distinguish Ultra from Ultrafast;
+  keep installed settings and Astra lead preference unchanged.
+
+## 2026-10-12 — weekly proposal follow-up
+
+- Note Sol Ultrafast availability and usage premium, and the documented
+  plan-specific five-hour distinction without inferring missing live readings.
+- Keep existing model choices, installations and usage safeguards unchanged;
+  extend the open proposal rather than creating a duplicate.
+
+## 2026-10-05 — weekly proposal follow-up
+
+- Extend the existing unmerged model review with GPT-6.1 Sol worker evaluation,
+  reasoning baselines and distinct subscription/credit speed multipliers.
+- Preserve Astra lead policy and all installed settings; no duplicate proposal,
+  executable helpers, skills or deployment.
+
+## 2026-09-28 — model review proposal
+
+- Record GPT-6 Sol/Luna worker candidates, rate and availability caveats, targeted
+  visual reevaluation after the image fix, and GPT-5.5 retirement guidance.
+- Keep Astra lead policy and existing settings unchanged; distinguish usage
+  analytics from allowance. No scripts, skills, installers or deployment.
+
 ## 2026-09-19 — reset-aware pacing and direct publication
 
 - Add remaining-time pacing per reported usage window, reserves, shared-session
