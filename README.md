@@ -26,6 +26,8 @@ when you authorize it. Updating this repository does not update existing tasks.
 - [CHATGPT_CUSTOM_INSTRUCTIONS.md](CHATGPT_CUSTOM_INSTRUCTIONS.md): text for ChatGPT.
 - [MAINTENANCE.md](MAINTENANCE.md): how findings and model releases become proposals.
 - [CHANGELOG.md](CHANGELOG.md): dated approved changes.
+- [September 28 model review](findings/2026-09-28-model-review.md): optional worker,
+  compatibility and retirement findings; read when evaluating a model change.
 
 Use the best available model to lead planning, orchestration, integration and
 final review: currently GPT-6 Astra. Adjust reasoning to the task and delegate
