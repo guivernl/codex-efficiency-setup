@@ -1,9 +1,29 @@
 # Model and compatibility review — 2026-09-28
 
-Latest follow-up: 2026-10-19. Earlier dated observations remain below.
+Latest follow-up: 2026-10-31. Earlier dated observations remain below.
 
 Optional maintenance reference, not additional always-loaded instructions.
 No settings or installations are changed by this document.
+
+## October 31 follow-up
+
+The [model guidance](https://learn.chatgpt.com/docs/models), opened October 31,
+positions GPT-6.1 Terra for writing, interpreting images/screens and computer use.
+Evaluate it as a worker for bounded tasks needing those capabilities when Luna
+is insufficient; retain Astra as lead under the owner's policy. This is a
+task-fit candidate, not a mandatory replacement or a reason to redo completed work.
+The documented CLI minimum is 0.159.0; check the actual client, model picker,
+supported reasoning and worker/tool access before recommending it.
+
+The [pricing page](https://learn.chatgpt.com/docs/pricing), opened October 31,
+lists Terra's Standard input, cached-input and output credit rates at half of
+6.1 Sol's, but above Luna's. These rates do not establish total task savings or
+included quota consumption. Compare quality, reasoning, retries, handoff and
+verification costs on a small authorized task; do not invent a savings percentage.
+Work/Codex availability covers Plus, Pro, Business, Enterprise and Edu, subject
+to surface/workspace access; ordinary Chat and UAE inference residency are not
+supported. Overall plan limits remain unchanged. Keep all permissions and saved
+settings intact; ask before any migration or allowance-driven lead downgrade.
 
 ## October 19 follow-up
 

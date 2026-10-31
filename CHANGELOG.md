@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-31 — Terra worker evaluation proposal
+
+- Add dated GPT-6.1 Terra task-fit, availability and credit-rate findings to the
+  existing model review; distinguish token rates from total task/quota savings.
+- Preserve Astra lead policy and installed settings; no new skill or deployment.
+
 ## 2026-10-19 — weekly proposal follow-up
 
 - Record effective GPT-5.5 retirement for ChatGPT-authenticated Codex and retain
